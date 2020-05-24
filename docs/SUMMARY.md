@@ -2,8 +2,11 @@
 
 * [Create a voice application](README.md)
 
-## Develop a voice application
+## User
 
-* [Create](develop-a-voice-application/create/README.md)
-  * [API docs](develop-a-voice-application/create/second-page.md)
+* [Installation](user/INSTALL.md)
 
+## Develop
+
+* [Voice application](developer/README.md)
+  * [Create the stub files](developer/api-stub.md)
