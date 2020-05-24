@@ -2,7 +2,7 @@
 description: How to implement a new voice application for Pia in Javascript
 ---
 
-# Create a voice application
+# Create the stub files
 
 A voice app, or app, or "skill" allows you to teach Pia new voice commands and react to them. This document is intended for software developers that want to implement a new skill in JavaScript.
 

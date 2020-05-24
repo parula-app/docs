@@ -12,7 +12,7 @@
    1. Go to the [node.js website](https://nodejs.org/en/) and download node 12 or later
       * node version 10 in Ubuntu 20.04 is too old.
    2. Extract the archive somewhere.
-   3. `ln -s `/your/path/to/node/` /usr/local/bin/node`
+   3. `ln -s`/your/path/to/node/`/usr/local/bin/node`
 4. Install MaryTTS
    1. `git clone https://github.com/marytts/marytts/`
    2. Build it with `./gradlew`
@@ -34,7 +34,8 @@
    1. `cd` to the directory where this file is.
    2. `yarn start`
    3. Say "Hey Edison, what time is it?"
-   4. Find more commands to say by looking at `app/`*`/intents.en.json`
+   4. Find more commands to say by looking at `app/`\*`/intents.en.json`
 8. Configure the applications
-9. Create your own voice apps :-)
-   1. Implement your voice commands in JavaScript, with the help of npm modules.
+9. Create your own voice apps :-\)
+   1. [Implement your voice commands](../develop/app/create-the-stub-files.md) in JavaScript, with the help of npm modules.
+
