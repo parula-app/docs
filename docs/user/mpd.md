@@ -6,13 +6,30 @@ description: Play your music archive
 
 ## Setup
 
-Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. You will will enjoy mpd even outside of Pia.
+Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. We hope you will enjoy mpd even outside of Pia.
 
-1. \(Should already be done\) Install mpd with `# apt install mpd`
+1. Install mpd with `# apt install mpd mpc`
 2. Configure the directory where your music files are.
+   1. Edit `/etc/mpd.conf`
+   2. Change `music_directory` to the directory where your music files are.
 3. Configure the sound output via PulseAudio and the right sound device.
-4. Test it with some [native mpd clients](https://www.musicpd.org/clients/).
-   1. `# apt install gmpc mpc`
+   1. It may already be _correct by default_, depending on your Linux distribution and setup. If not:
+   2. Find the right audio device: `pacmd list-sinks | grep "name:"`
+   3. Edit `/etc/mpd.conf`
+   4. ```text
+      audio_output {
+             type            "pulse"
+             name            "Pia - Device speaker"
+             server          "localhost"
+             sink            "alsa_output.usb-...analog-stereo"
+      }
+      ```
+4. Activate the new config
+   1. Restart the mpd server:`sudo systemctl restart mpd.service`
+   2. Enable at boot:`sudo systemctl enable mpd.service`
+   3. Scan your music library: `mpc update`
+5. Test it with some [native mpd clients](https://www.musicpd.org/clients/).
+   1. `# apt install gmpc`
    2. Start menu \| Multimedia \| GNOME Music Player Client
    3. You can also control playback with your smartphone by using the mpdroid client \([APK](https://f-droid.org/repo/com.namelessdev.mpdroid_58.apk) via [F-Droid](https://f-droid.org/en/packages/com.namelessdev.mpdroid/), or [Google Play Store](https://play.google.com/store/apps/details?id=com.namelessdev.mpdroid&hl=en)\).
 
