@@ -4,7 +4,7 @@ description: Play your music archive
 
 # Music
 
-Pia uses the excellent music server [mpd](https://www.musicpd.org/>) to play your music and Internet radio stations. You will enjoy mpd even outside of Pia.
+Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. You will will enjoy mpd even outside of Pia.
 
 1. Install mpd with `# apt install mpd`
 2. Configure the directory where your music files are.
