@@ -30,7 +30,7 @@
       * en-GB `dfki-spike`
       * en-GB `dfki-prudence`
    4. Restart the server: `./gradlew run`
-   5. Open `http://localhost:59125` in a browser, to check whether the server is running and the voices are listed in the dropdown.
+   5. Open [http://localhost:59125](http://localhost:59125) in a browser, to check whether the server is running and the voices are listed in the dropdown.
 5. Download DeepSpeech models
    1. Download the [DeepSpeech 0.6.1 models](https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz).
       * The DeepSpeech mode version needs to match the version of DeepSpeech npm module perfectly
