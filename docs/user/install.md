@@ -15,9 +15,9 @@
      2. `# dnf install mpg123 mpd sox alsa-lib-devel java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel`
      3. Install Yarn
         1. Complete step 3 below.
-        2. `# npm install -g yarn`
+        2. `$ npm install -g yarn`
 3. Install node.js
-   1. Go to the [node.js website](https://nodejs.org/en/) and download node 12 or later
+   1. Go to the [node.js website](https://nodejs.org/en/) and download node 12 or later.
       * node version 10 in Ubuntu 20.04 is too old.
    2. Extract the archive somewhere.
    3. `ln -s`/your/path/to/node/`/usr/local/bin/node`
