@@ -34,12 +34,12 @@
 5. Download DeepSpeech models
    1. Download the [DeepSpeech 0.6.1 models](https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz).
       * The DeepSpeech mode version needs to match the version of DeepSpeech npm module perfectly
-   2. Extract them in `../deepspeech/deepspeech-0.6.1-models/`, relative to this file. The path is configurable in `config.json`.
+   2. Extract them in `../deepspeech/deepspeech-0.6.1-models/`, relative to the Pia source directory. The path is configurable in `config.json`.
 6. Install node packages
-   1. `cd` to the directory where this file is.
+   1. `cd` to the Pia source directory
    2. `yarn install`
 7. Run Pia
-   1. `cd` to the directory where this file is.
+   1. `cd` to the Pia source directory
    2. `yarn start`
    3. Say "Hey Edison, what time is it?"
    4. Find more commands to say by looking at `app/`\*`/intents.en.json`
