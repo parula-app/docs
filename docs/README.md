@@ -2,7 +2,7 @@
 description: Your Personal Information Assistant
 ---
 
-# Create a voice application
+# Pia
 
 Pia is a voice assistant. You can talk to her and give her reasonably natural commands and she will try to understand them and execute them. The commands are defined by voice apps.
 
