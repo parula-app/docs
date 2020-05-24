@@ -6,6 +6,7 @@
 
 * [Installation](user/install.md)
 * [Music](user/mpd.md)
+* [Calendar](user/calendar.md)
 
 ## Develop
 
