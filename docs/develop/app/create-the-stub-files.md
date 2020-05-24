@@ -58,7 +58,7 @@ export default class MyApp extends JSONApp {
    * @param args {}
    * @param client {ClientAPI}
    */
-  async personDetails(args, client) 
+  async personDetails(args, client)
   {
     return new Error("I have not learned about persons yet");
   }

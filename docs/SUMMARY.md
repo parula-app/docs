@@ -8,6 +8,6 @@
 
 ## Develop
 
-* [Voice application](develop/developer/README.md)
-  * [Create the stub files](develop/developer/create-the-stub-files.md)
+* [Voice application](develop/app/README.md)
+  * [Create the stub files](develop/app/create-the-stub-files.md)
 
