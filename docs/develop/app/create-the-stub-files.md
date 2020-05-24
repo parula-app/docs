@@ -155,3 +155,11 @@ Before you start writing code, know that built-in apps are going to run in the s
 
 A crash in your app, or even just an uncaught exception from an async function, will lead to all of Pia crashing, and that's pretty bad. Also pay attention for leaks, as your app needs to run for months, without using more RAM. Likewise, do not waste computing resources, esp. unnecessary or large or slow network requests, nor CPU time. Remember that your app will run on a Raspberry Pi or an Android phone, not your desktop development machine.
 
+{% hint style="info" %}
+Tip: Due to a [bug in node.js import\(\) loader](https://github.com/nodejs/node/issues/32177), syntax errors in your JavaScript files will have no stack. For debugging, you can add this hardcoded import to `baseapp/loader/BuiltinAppsLoader.js`. But do not commit this change. Non-syntax errors get a proper stack.
+
+```text
+`import MyApp from '../../app/myapp/myapp.js';`
+```
+{% endhint %}
+
