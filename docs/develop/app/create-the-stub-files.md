@@ -46,7 +46,7 @@ import { JSONApp } from '../../baseapp/JSONApp.js';
 
 export default class MyApp extends JSONApp {
   constructor() {
-    super("myapp", "app/myapp/");
+    super("myapp");
   }
 
   async load(lang) {
@@ -65,7 +65,7 @@ export default class MyApp extends JSONApp {
 }
 ```
 
-Please replace `myapp` and `MyApp` in the 3 places.
+Please replace `myapp` with the directory name and `MyApp` with a class name.
 
 The default export allows Pia to find your app class and load it.
 
