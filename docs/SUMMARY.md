@@ -5,6 +5,7 @@
 ## User
 
 * [Installation](user/install.md)
+* [Music](user/mpd.md)
 
 ## Develop
 

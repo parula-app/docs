@@ -16,7 +16,11 @@
 4. Install MaryTTS
    1. `git clone https://github.com/marytts/marytts/`
    2. Build it with `./gradlew`
-   3. Install voices en-US `cmu-slt`, en-US `cmu-rms`, en-GB `dfki-spike`, and en-GB `dfki-prudence` by running `./gradlew runInstallerGui`
+   3. Install voices by running `./gradlew runInstallerGui`
+      * en-US `cmu-slt`
+      * en-US `cmu-rms`
+      * en-GB `dfki-spike`
+      * en-GB `dfki-prudence`
    4. Restart the server: `./gradlew run`
    5. Open `http://localhost:59125` in a browser, to check whether the server is running and the voices are listed in the dropdown.
 5. Download DeepSpeech models
@@ -31,19 +35,6 @@
    2. `yarn start`
    3. Say "Hey Edison, what time is it?"
    4. Find more commands to say by looking at `app/`*`/intents.en.json`
-8. Create your own voice apps :-)
-   1. `cp -a app/clock/ app/`yourappname
-   2. Change all mentions of `clock` to your app name. The main `.js` filename must match the directory name.
-   3. Adapt `intents.en.json` . Also look at the other apps.
-   4. Implement your voice commands in JavaScript, with the help of npm modules.
-
-## For apps
-
-### Music library
-
-1. Install mpd with `# apt install mpd`
-2. Configure the directory where your music files are.
-3. Configure the sound output via PulseAudio and the right sound device.
-4. Test it with some native mpd clients.
-   1. `# apt install gmpc mpc`
-   2. Start menu \| Multimedia \| GNOME Music Player Client
+8. Configure the applications
+9. Create your own voice apps :-)
+   1. Implement your voice commands in JavaScript, with the help of npm modules.
