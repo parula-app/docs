@@ -14,7 +14,7 @@ So, you want to add new skills to Pia and write a voice app? That's great! We're
 
 We're going to assume you've done the basics:
 
-1. Checked out the source code with git clone
+1. Checked out the Pia source code with git clone
 2. Have Pia running from that source
 3. Know modern ES6 JavaScript with async/await
 
@@ -71,16 +71,16 @@ The default export allows Pia to find your app class and load it.
 
 ### README
 
-Open `README.md`and add a short and long description your application.
+Open `README.md`and add a short and a long description of your application.
 
-The first 1-2 lines should describe it in a very brief way. Then, make an empty line, and after describe it in more detail. Include which uses cases and purposes you want your app to fulfill. Also decribe on a very high level which technoligies or third party applications or libraries it uses.
+The first 1-2 lines should describe it in a very brief way. Then, make an empty line, and describe it in more detail. Include which uses cases and purposes you want your app to fulfill for the user, from an end user perspective. Also decribe on a very high level which technologies or third party applications or libraries it uses.
 
 For example:
 
 ```text
 Plays local music stored on the local disk.
 
-Uses MPD <https://www.musicpd.org/> for the
+Uses MPD <https://www.musicpd.org> for the
 music archive management, playlist, and playback.
 
 MPD needs to be running.
@@ -89,9 +89,9 @@ The server name is configured in config under `mpd`.
 
 Describe your app in a similar format.
 
-If you want to add a feature list, this is a good moment to write it down, before you start coding. This will guide you during your later development, and help you to focus on the original goal.
+This is a good moment for explicitly think about a feature list, and to write it down, before you start coding. This will guide you during your later development, and help you to focus on the original goal.
 
-Use Markdown heading and nested lists to format it. Please clearly distinguish between working features and intended features.
+Use Markdown `#` headings and nested `*` lists to format it. Please clearly distinguish between working features and intended features.
 
 However, there is no point in listing available user voice commands, because they will be spelled out in the intents JSON file.
 
