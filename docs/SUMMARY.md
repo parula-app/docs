@@ -4,9 +4,10 @@
 
 ## User
 
-* [Installation](user/INSTALL.md)
+* [Installation](user/install.md)
 
 ## Develop
 
-* [Voice application](developer/README.md)
-  * [Create the stub files](developer/api-stub.md)
+* [Voice application](develop/developer/README.md)
+  * [Create the stub files](develop/developer/create-the-stub-files.md)
+
