@@ -31,10 +31,15 @@
       * en-GB `dfki-prudence`
    4. Restart the server: `./gradlew run`
    5. Open [http://localhost:59125](http://localhost:59125) in a browser, to check whether the server is running and the voices are listed in the dropdown.
-5. Download DeepSpeech models
-   1. Download the [DeepSpeech 0.6.1 models](https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz).
-      * The DeepSpeech mode version needs to match the version of DeepSpeech npm module perfectly
-   2. Extract them in `../deepspeech/deepspeech-0.6.1-models/`, relative to the Pia source directory. The path is configurable in `config.json`.
+5. Download data files
+   1. Download the [Pia app data files](https://pia.im/download/pia-data.tar.bz2)
+   2. `cd` to the Pia source directory
+   3. `mkdir data`
+   4. `cd data/`
+   5. `tar xjf /path/to/pia-data.tar.bz2`
+   6. Download the [DeepSpeech 0.6.1 models](https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz)
+      * The DeepSpeech mode version needs to match the version of DeepSpeech npm module perfectly.
+   7. `tar xzf /path/to/deepspeech-models.tar.gz`
 6. Install node packages
    1. `cd` to the Pia source directory
    2. `yarn install`
