@@ -38,11 +38,12 @@
    4. `cd data/`
    5. `tar xjf /path/to/pia-data.tar.bz2`
    6. Download the [DeepSpeech 0.6.1 models](https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz)
-      * The DeepSpeech mode version needs to match the version of DeepSpeech npm module perfectly.
+      * The DeepSpeech model version needs to match the version of DeepSpeech npm module perfectly.
    7. `tar xzf /path/to/deepspeech-models.tar.gz`
 6. Install node packages
    1. `cd` to the Pia source directory
    2. `yarn install`
+   3. `cp config-min.json config.json`
 7. Run Pia
    1. `cd` to the Pia source directory
    2. `yarn start`
