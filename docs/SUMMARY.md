@@ -8,6 +8,7 @@
 * [Music](user/music.md)
 * [Calendar](user/calendar.md)
 * [Shopping list](user/shopping-list.md)
+* [Lights](user/lights.md)
 
 ## Setup
 
