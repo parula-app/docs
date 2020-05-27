@@ -10,5 +10,5 @@ Try saying:
 * Turn the table light on
 * Turn bathroom off
 
-whereas "table" and "bathroom" are the names of the lights and the rooms that you configured in the Philips Hue app.
+whereas "table light" and "bathroom" are the names of the lights and the rooms that you configured in the Philips Hue app.
 
