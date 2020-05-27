@@ -47,8 +47,18 @@
 7. Run Pia
    1. `cd` to the Pia source directory
    2. `yarn start`
-   3. Say "Hey Edison, what time is it?"
-   4. Find more commands to say by looking at `app/`\*`/intents.en.json`
+   3. You should see
+
+      ```text
+      (...)
+      Applications loaded:
+        clock: success
+      (...)
+      Listening to your command...
+      ```
+
+   4. Say "Hey Edison, what time is it?"
+   5. Find more commands to say by looking at `app/`\*`/intents.en.json`
 8. Configure the applications
 9. Create your own voice apps :-\)
    1. [Implement your voice commands](../develop/app/create-the-stub-files.md) in JavaScript, with the help of npm modules.

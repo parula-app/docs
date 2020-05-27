@@ -13,5 +13,6 @@ For your music in your local music library, try saying:
 For Internet radio stations, try saying:
 
 * Play the radio station ...
+* Play the station Maxxima
 * Play Jazz music
 
