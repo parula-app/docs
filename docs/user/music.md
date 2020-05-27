@@ -4,8 +4,6 @@ description: Play your music archive
 
 # Music
 
-## Music
-
 For your music in your local music library, try saying:
 
 * Play the song ...
