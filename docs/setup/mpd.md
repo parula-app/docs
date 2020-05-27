@@ -2,9 +2,7 @@
 description: Play your music archive
 ---
 
-# Music
-
-## Setup
+# Music library
 
 Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. We hope you will enjoy mpd even outside of Pia.
 
@@ -30,7 +28,6 @@ Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your 
              sink            "alsa_output.usb-...analog-stereo"
       }
       ```
-
    5. Restart the mpd server:`sudo systemctl restart mpd.service`
 4. Activate the new config
    1. Enable at boot:`sudo systemctl enable mpd.service`
@@ -39,23 +36,5 @@ Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your 
    1. `# apt install gmpc`
    2. Start menu \| Multimedia \| GNOME Music Player Client
    3. You can also control playback with your smartphone by using the mpdroid client \([APK](https://f-droid.org/repo/com.namelessdev.mpdroid_58.apk) via [F-Droid](https://f-droid.org/en/packages/com.namelessdev.mpdroid/), or [Google Play Store](https://play.google.com/store/apps/details?id=com.namelessdev.mpdroid&hl=en)\).
-
-## Voice commands
-
-For your local music, try saying:
-
-* Play the song ...
-* Play the artist ...
-* Play ... by ...
-
-For radio stations, try saying:
-
-* Play the radio station ...
-* Play Jazz music
-
-
-
-
-
-
-
+   4. Once that works, ...
+6. Try some [voice commands for calendar](../user/music.md)
