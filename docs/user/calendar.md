@@ -11,3 +11,4 @@ Try saying:
 * Which my appointments do I have on Saturday?
 * What is my next appointment?
 * Add an appointment with Wilma on Saturday 2 PM \(not implemented yet\)
+
