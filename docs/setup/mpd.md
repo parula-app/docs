@@ -15,10 +15,10 @@ Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your 
    * Alternatively:
      1. Edit `/etc/mpd.conf`
      2. Change `music_directory` to the directory where your music files are.
-     3. Restart the mpd server:`sudo systemctl restart mpd.service`
+     3. Restart the mpd server:`# systemctl restart mpd.service`
 3. \(Skip this unless you hear no music.\) Configure the sound output via PulseAudio and the right sound device.
    1. It may already be _correct by default_, depending on your Linux distribution and setup. If not:
-   2. Find the right audio device: `pacmd list-sinks | grep "name:"`
+   2. Find the right audio device: `$ pacmd list-sinks | grep "name:"`
    3. Edit `/etc/mpd.conf`
    4. ```text
       audio_output {
@@ -28,9 +28,9 @@ Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your 
              sink            "alsa_output.usb-...analog-stereo"
       }
       ```
-   5. Restart the mpd server:`sudo systemctl restart mpd.service`
+   5. Restart the mpd server:`# systemctl restart mpd.service`
 4. Activate the new config
-   1. Enable at boot:`sudo systemctl enable mpd.service`
+   1. Enable at boot:`# systemctl enable mpd.service`
    2. Scan your music library: `mpc update --wait`
 5. Test it with some [native mpd clients](https://www.musicpd.org/clients/).
    1. `# apt install gmpc`
