@@ -11,7 +11,7 @@ Try saying:
 
 
 
-* Put setup Pia to my TODO list
+* Put watering the garden on my TODO list
 * What is on my TODO list?
 * What do I have to do?
 
