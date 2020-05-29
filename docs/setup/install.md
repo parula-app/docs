@@ -44,6 +44,7 @@
    1. `cd` to the Pia source directory
    2. `yarn install`
    3. `cp config-min.json config.json`
+   4. Adapt `config.json`
 7. Run Pia
    1. `cd` to the Pia source directory
    2. `yarn start`
