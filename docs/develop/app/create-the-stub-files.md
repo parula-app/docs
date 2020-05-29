@@ -60,7 +60,8 @@ export default class MyApp extends JSONApp {
    */
   async personDetails(args, client)
   {
-    return this.error("I have not learned about persons yet");
+    throw this.error("not-implemented");
+    return this.getResponse("person-details", { name, city });
   }
 }
 ```
