@@ -60,7 +60,7 @@ export default class MyApp extends JSONApp {
    */
   async personDetails(args, client)
   {
-    return new Error("I have not learned about persons yet");
+    return this.error("I have not learned about persons yet");
   }
 }
 ```
