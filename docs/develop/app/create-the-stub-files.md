@@ -142,7 +142,14 @@ Open file `intents.en.json`and fill it out:
                     "name": "Person",
                     "basetype": "Pia.List"
                 }
-            ]
+            ],
+            "responses": {
+              "not-implemented": [
+                "I have not learned this yet",
+                "Somebody please tell me?"
+              ],
+              "person-details": "%name% lives in %city%"
+            }
         }
     }
 }
