@@ -144,11 +144,11 @@ Open file `intents.en.json`and fill it out:
                 }
             ],
             "responses": {
+              "person-details": "%name% lives in %city%",
               "not-implemented": [
                 "I have not learned this yet",
                 "Somebody please tell me?"
-              ],
-              "person-details": "%name% lives in %city%"
+              ]
             }
         }
     }
