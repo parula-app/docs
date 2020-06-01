@@ -8,14 +8,17 @@
       * We'll be working on Raspberry Pi 4 support soon. Raspberry Pi 3 will not be supported.
 2. Install OS dependencies
    * Ubuntu, Debian etc.
-     * `# apt install yarnpkg mpg123 mpd sox libasound2-dev default-jre-headless default-jdk`
+     * `# apt install yarnpkg mpg123 mpd sox libasound2-dev default-jre-headless default-jdk git`
    * Fedora, RedHat etc.
      1. Install RPM Fusion \(for mpd\)
         * `# dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
-     2. `# dnf install mpg123 mpd sox alsa-lib-devel java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel`
+     2. `# dnf install mpg123 mpd sox alsa-lib-devel java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel git`
      3. Install Yarn
         1. Complete step 3 below.
         2. `$ npm install -g yarn`
+   * Mac
+     1. `# brew node yarn sox mpd mpg123 openjdk git`
+     2. Skip step 3.
 3. Install node.js
    1. Go to the [node.js website](https://nodejs.org/en/) and download node 12 or later.
       * node version 10 in Ubuntu 20.04 is too old.
