@@ -8,7 +8,7 @@ Pia is a voice assistant. You can talk to her and give her reasonably natural co
 
 ## Features
 
-### Local
+### 100% Local
 
 Pia works entirely on your computer and without Internet connection. Speech recognition and voice generation happen on your device, not in the cloud.
 
@@ -26,7 +26,7 @@ It also means that Pia can work in places where Internet connection is intermitt
 
 Obviously, Google searches, news, weather updates and so on will still call out to the Internet.
 
-### Context
+### 100% Open Source
 
-Pia keeps context of what you said and allows you to make follow up questions, e.g. using pronous like "it" or "Play songs by this artist".
+All software involved is Free Software. That includes speech recognition, speech generation, and setup. No proprietary services are needed for setup or adding skills. Everything happens on your computer and everything is Free Software. Our goal is to empower the end user.
 
