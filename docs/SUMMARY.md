@@ -10,6 +10,7 @@
 * [Shopping list](user/shopping-list.md)
 * [Lights](user/lights.md)
 * [Facts](user/facts.md)
+* [Jokes](user/jokes.md)
 
 ## Setup
 
