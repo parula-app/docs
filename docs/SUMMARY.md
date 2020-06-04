@@ -9,8 +9,8 @@
 * [Calendar](user/calendar.md)
 * [Shopping list](user/shopping-list.md)
 * [Lights](user/lights.md)
-* [Facts](user/facts.md)
 * [Jokes](user/jokes.md)
+* [Facts](user/facts.md)
 
 ## Setup
 
