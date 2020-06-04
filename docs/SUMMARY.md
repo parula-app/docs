@@ -6,10 +6,10 @@
 
 * [Clock](user/clock.md)
 * [Music](user/music.md)
+* [Jokes](user/jokes.md)
 * [Calendar](user/calendar.md)
 * [Shopping list](user/shopping-list.md)
 * [Lights](user/lights.md)
-* [Jokes](user/jokes.md)
 * [Facts](user/facts.md)
 
 ## Setup
