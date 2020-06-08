@@ -20,6 +20,7 @@
 
 ## Develop
 
+* [How Pia works](develop/how-pia-works.md)
 * [Voice application](develop/app/README.md)
   * [Create the stub files](develop/app/create-the-stub-files.md)
 

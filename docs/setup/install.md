@@ -55,6 +55,7 @@
    1. `cd` to the Pia source directory
    2. `yarn start`
    3. You should see
+
       ```text
       (...)
       Applications loaded:
@@ -62,6 +63,7 @@
       (...)
       Listening to your command...
       ```
+
    4. Say "Hey Edison, what time is it?"
    5. Find more commands to say by looking at `app/`\*`/intents.en.json`
 8. Configure the applications
