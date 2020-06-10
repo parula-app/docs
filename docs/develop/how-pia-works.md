@@ -24,19 +24,23 @@ This section explains the basic concepts on which Pia is based. They determine t
 
 In Pia, parts 1, 2, 7 and 8 are what we call "client" or "device", where as Parts 3, 4 and 6 are Pia "core". Part 5, the voice apps, may be either be built-in or created by third parties. I.e. you :\).
 
-\(There is only one Pia core in your house, but there can be many Pia "devices" that are connected to the same core. That allows them to work in a coordinated fashion and all use the same data. E.g. you have smart speakers in your living room and your bed room, a Pia app for your desktop computer, and a small water proof device in your bath room. -- The federation feature is not implemented yet.\)
+\(There is only one Pia core in your house, but there can be many Pia "devices" that are connected to the same core. That allows them to work in a coordinated fashion and all use the same data. E.g. you have smart speakers in your living room and your bed room, a Pia app for your desktop computer, and a small water proof device in your bath room. But they all use the same data. -- The federation feature is not implemented yet.\)
 
 ## Known vocabulary
 
 While speech recognition might have a reasonably high detection rate for simple words like "play" in a sentence, there is little chance for it to correctly understand all words of a song title or even an artist. There is a very high chance that one of the words will be misunderstood. If we do a simple string matching, character by character, it will likely not find the right results.
 
-If the user says "Play Chopin", a generic speech recognition might recognize "Play shoe pan" or "Play shoe pain". If we search a music library for "shoe pain", we will not find "Chopin". So, we need additional logic to do the matching, not only for commands, but also for the values, like song titles, artists, movie names, locations like city names. Types like Dates and Times also get special treatment, to recognize "tomorrow at 2 PM".
+If the user says "Play Chopin", a generic speech recognition might recognize "Play shoe pan" or "Play shoe pain". If we search a music library for "shoe pain", we will not find "Chopin". So, we need additional logic to do the matching, not only for commands, but also for the values, like song titles, artists, movie names, or locations and city names. Types like Dates and Times also get special treatment, to recognize "tomorrow at 2 PM".
+
+
 
 ## Intents are functions
 
-Intents work like functions. They get parameters, which can be, not just words, but entire objects that you specify, and they can return objects. These objects have types, and Pia understands the type of the objects.
+Voice apps do not need to worry about the recognition of what was said. Pia takes care of all that. Voice apps can concentrate on their domain, on what they actually do. The voice app only implements Intents.
 
-The types even work cross applications, so one voice app can return a contact person, whereas another voice app places the call. One application allows you to find a restaurant, another allows you to see its rating, and a third app shows you how to navigate there. This works, because each of these DataTypes inherit from the same base type - in this case, a Location, more specifically a business with a Location.
+Intents are functions in your programming language. They get parameters, which can be not only words, but entire objects that you specify, and they can return objects. These objects have types, and Pia understands the type of the objects.
+
+That allows the system to build a coherent whole, even across applications. For example, one voice app can return a contact person, whereas another voice app places the call. Or, one application allows you to find a restaurant, another allows you to see its rating, and a third app shows you how to navigate there. Pia defines common base types - in this case, a Location, more specifically a business with a Location. These types can be extended dynamically, and there will be a system for apps to agree on common types, called ontology.
 
 ## Context
 
