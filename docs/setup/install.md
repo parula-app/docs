@@ -28,7 +28,7 @@
 4. Install MaryTTS
    1. `git clone https://github.com/marytts/marytts/`
    2. Build it with `./gradlew`
-   3. Install voices by running `grep location.cmu-slt download/marytts-components.xml|sed -e "s|.href=\"||" -e "s|\".*||"` `unzip voice-cmu-slt-5.2.zip` or alternatively starting the UI app`./gradlew runInstallerGui`
+   3. Install voices by running``wget `grep location.*cmu-slt download/marytts-components.xml|sed -e "s|.*href=\"||" -e "s|\".*||"``` `unzip voice-cmu-slt-5.2.zip` or alternatively starting the UI app`./gradlew runInstallerGui`
       * en-US `cmu-slt`on the commandline
       * en-US `cmu-rms`
       * en-GB `dfki-spike`
