@@ -36,11 +36,9 @@ If the user says "Play Chopin", a generic speech recognition might recognize "Pl
 
 ## Intents are functions
 
-Voice apps do not need to worry about the recognition of what was said. Pia takes care of all that. Voice apps can concentrate on their domain, on what they actually do. The voice app only implements Intents.
+Voice apps do not need to worry about the recognition of what was said. Pia takes care of all that. Voice apps can concentrate on their domain, on what they actually do. The voice app only implements functions in your programming language. They are alled Intents. They get parameters, which can be words, or entire objects that you specify, and they can return objects as result. These objects have types, and Pia understands the type of the objects.
 
-Intents are functions in your programming language. They get parameters, which can be not only words, but entire objects that you specify, and they can return objects. These objects have types, and Pia understands the type of the objects.
-
-That allows the system to build a coherent whole, even across applications. For example, one voice app can return a contact person, whereas another voice app places the call. Or, one application allows you to find a restaurant, another allows you to see its rating, and a third app shows you how to navigate there. Pia defines common base types - in this case, a Location, more specifically a business with a Location. These types can be extended dynamically, and there will be a system for apps to agree on common types, called ontology.
+That allows the system to build a coherent whole, even across applications. For example, one voice app can return a contact person, whereas another voice app places the call. Or, one application allows you to find a restaurant, another allows you to see its rating, and a third app shows you how to navigate there. Pia defines common base types - in this case, a Person, or a Location, or more specifically a business with a Location. These types can be extended dynamically, and there will be a system for apps to agree on common types, called ontology.
 
 ## Context
 
