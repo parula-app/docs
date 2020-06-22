@@ -28,7 +28,7 @@ In Pia, parts 1, 2, 7 and 8 are what we call "client" or "device", where as Part
 
 ## Known vocabulary
 
-While speech recognition might have a reasonably high detection rate for simple words like "play" in a sentence, there is little chance for it to correctly understand all words of a song title or even an artist. There is a very high chance that one of the words will be misunderstood. If we do a simple string matching, character by character, it will likely not find the right results.
+While speech recognition might have a reasonably high detection rate for simple words like "play" in a sentence, there is little chance for it to correctly understand all words of a song title or even an artist name. Esp. names will most likely be misunderstood. If we do a simple string matching, character by character, it will likely not find the right results.
 
 If the user says "Play Chopin", a generic speech recognition might recognize "Play shoe pan" or "Play shoe pain". If we search a music library for "shoe pain", we will not find "Chopin". So, we need additional logic to do the matching, not only for commands, but also for the values, like song titles, artists, movie names, or locations and city names. Types like Dates and Times also get special treatment, to recognize "tomorrow at 2 PM".
 
