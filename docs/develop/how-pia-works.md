@@ -12,6 +12,7 @@ This section explains the basic concepts on which Pia is based. They determine t
    1. Converts recorded audio into plain text.
 4. Intent parser
    1. Matches what the user said with the known commands and known values.
+   2. Selects the most probable match
 5. Voice app
    1. This is equivalent to an application for Linux or Android, and a skill in other voice assistants.
    2. Consists out of Intents, which are high-level functions of the app.
