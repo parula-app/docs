@@ -14,6 +14,20 @@ Please take a look at the examples in [Pia source code](https://github.com/benbu
 
 TODO Describe all sections in detail.
 
+Currently, all data is underneath `interactionModel.languageModel`.
+
+`invocationName`contains the application ID. It is used for internal purposes only, but must be unique. It should not be a UUID, but an English name.
+
+## Intents
+
+## Responses
+
+`responses`contains an object map, whereas the property name is the string ID, which you pass into `this.getResponse(id)` or `this.error(id)` and the value is either a string or an array of strings. If it's an array of strings, a random entry will be chosen. This avoids too much annoying repetition and makes Pia nicer to listen to.
+
+
+
+
+
 
 
 

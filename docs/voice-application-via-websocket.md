@@ -17,13 +17,12 @@ For such cases, you can run your application in a different OS process and conne
 
 ## JavaScript
 
-If you're implementing your out-of-process application in JavaScript, please use the base classes that are implemented in Pia.
+If you're implementing your out-of-process application in JavaScript, you can use the base classes that are implemented in Pia.
 
 Install, on command line:
 
 ```text
-yarn add pia
-yarn add pia-ws-app
+yarn add pia-ws-app pia
 ```
 
 For startup:
@@ -43,46 +42,7 @@ import WSAppServer from 'pia-ws-app';
 
 ```
 
-For your app implementation:
-
-```text
-import { JSONApp } from 'pia/baseapp/JSONApp.js';
-import { getConfig } from 'pia/util/config.js';
-
-export default class MyApp extends JSONApp {
-  constructor() {
-    super("myapp", ".");
-  }
-
-  async load(lang) {
-    await super.load(lang);
-    let config = getConfig().calendar;
-    ...
-  }
-
-  /**
-   * Intent news, as defined by intents.en.json
-   * @param args {
-   *   NumberOfResults {Integer}
-   * }
-   * @param client {ClientAPI}
-   * @returns {string} what to say to the end user
-   */
-  async news(args, client) {
-    // client.lang contains the language, but this.getResponse() and this.error() pick the right language for you
-    if (args.numberOfResults > 20) {
-      throw this.error("too-much"); // translates and throws Error
-    }
-    let latestNews = ...
-    let newsString = latestNews.slice(0, arg.NumberOfResults).join(". ");
-    return this.getResponse("news-prefix", { // translates "The latest news are:"
-      news: newsString,
-    });
-  },
-}
-```
-
-The rest of the voice application implementation is identical to [built-in apps](develop/app/).
+The rest of the voice application mplementation is identical to [built-in apps](develop/app/).
 
 ## Wire protocol
 
