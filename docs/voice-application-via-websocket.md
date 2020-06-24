@@ -148,7 +148,7 @@ You return your responses, in success and error cases, by sending a message over
 
 ### Registration
 
-At startup, you need to call Pia core and tell it about your app. This happens with a call with path `registerApp`, which you issue right after opening the WebSocket. The argument is the intentsJSON file. E.g.:
+At startup, you need to call Pia core and tell it about your app. This happens with a call with path `registerApp`, which you issue right after opening the WebSocket. The argument is the [Intents JSON](develop/app/intents-json.md) file. E.g.:
 
 ```text
 {
@@ -168,7 +168,7 @@ At startup, you need to call Pia core and tell it about your app. This happens w
 
 ```
 
-whereas `invocationName` contains your app ID, and `intents.name`is the intent ID and function name.
+whereas `invocationName` contains your app ID, and `intents.name`is the intent ID and function name. For a detailed description, see [Intents JSON](develop/app/intents-json.md).
 
 When the user says "What are the news", Pia core will send call function with `path: "myapp/news"`, according to the protocol above, as a message on your WebSocket connection.
 
