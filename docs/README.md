@@ -6,7 +6,9 @@ description: Your digital assistant
 
 ![](.gitbook/assets/pia-text-256.png)
 
-Parula is a voice assistant. You can talk to her and give her reasonably natural commands and she will try to understand them and execute them. The commands are defined by voice apps.
+Parula Information Assisant
+
+Parula is your digital assistant. You can talk to her and give her reasonably natural commands and she will try to understand them and execute them. The commands are defined by voice apps.
 
 ## Features
 
