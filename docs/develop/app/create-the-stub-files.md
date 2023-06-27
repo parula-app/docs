@@ -1,21 +1,21 @@
 ---
-description: How to implement a new voice application for Pia in Javascript
+description: How to implement a new voice application for Parula in Javascript
 ---
 
 # Create the stub files
 
-A voice app, or app, or "skill" allows you to teach Pia new voice commands and react to them. This document is intended for software developers that want to implement a new skill in JavaScript.
+A voice app, or app, or "skill" allows you to teach Parula new voice commands and react to them. This document is intended for software developers that want to implement a new skill in JavaScript.
 
 ## Motivation
 
-So, you want to add new skills to Pia and write a voice app? That's great! We're very happy for your contributions to make Pia more versatile in situations and in tasks where you want her to help you. Once your app is working well and robust, please make a Pull Request to contribute it to Pia's skill set.
+So, you want to add new skills to Parula and write a voice app? That's great! We're very happy for your contributions to make Parula more versatile in situations and in tasks where you want her to help you. Once your app is working well and robust, please make a Pull Request to contribute it to Parula's skill set.
 
 ## Requirements
 
 We're going to assume you've done the basics:
 
-1. Checked out the Pia source code with git clone
-2. Have Pia running from that source
+1. Checked out the Parula source code with git clone
+2. Have Parula running from that source
 3. Know modern ES6 JavaScript with async/await
 
 ## Create a stub
@@ -68,7 +68,7 @@ export default class MyApp extends JSONApp {
 
 Please replace `myapp` with the directory name and `MyApp` with a class name.
 
-The default export allows Pia to find your app class and load it.
+The default export allows Parula to find your app class and load it.
 
 ### README
 
@@ -128,7 +128,7 @@ Open file `intents.en.json`and fill it out:
                     "slots": [
                         {
                             "name": "Time",
-                            "type": "Pia.DateTime"
+                            "type": "Parula.DateTime"
                         },
                         {
                             "name": "Person",
@@ -140,7 +140,7 @@ Open file `intents.en.json`and fill it out:
             "types": [
                 {
                     "name": "Person",
-                    "basetype": "Pia.List"
+                    "basetype": "Parula.List"
                 }
             ],
             "responses": {
@@ -159,9 +159,9 @@ You need to replace `myapp` with your app name. Leave the rest as examples for y
 
 ## Execution model
 
-Before you start writing code, know that built-in apps are going to run in the same process as Pia, and are shipped with every instance of Pia. So, please make sure that your code is of good quality.
+Before you start writing code, know that built-in apps are going to run in the same process as Parula, and are shipped with every instance of Parula. So, please make sure that your code is of good quality.
 
-A crash in your app, or even just an uncaught exception from an async function, will lead to all of Pia crashing, and that's pretty bad. Also pay attention for leaks, as your app needs to run for months, without using more RAM. Likewise, do not waste computing resources, esp. unnecessary or large or slow network requests, nor CPU time. Remember that your app will run on a Raspberry Pi or an Android phone, not your desktop development machine.
+A crash in your app, or even just an uncaught exception from an async function, will lead to all of Parula crashing, and that's pretty bad. Also pay attention for leaks, as your app needs to run for months, without using more RAM. Likewise, do not waste computing resources, esp. unnecessary or large or slow network requests, nor CPU time. Remember that your app will run on a Raspberry Pi or an Android phone, not your desktop development machine.
 
 {% hint style="info" %}
 Tip: Due to a [bug in node.js import\(\) loader](https://github.com/nodejs/node/issues/32177), syntax errors in your JavaScript files will have no stack. For debugging, you can add this hardcoded import to `baseapp/loader/BuiltinAppsLoader.js`. But do not commit this change. Non-syntax errors get a proper stack.

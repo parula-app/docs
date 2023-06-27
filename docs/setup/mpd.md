@@ -4,7 +4,7 @@ description: Play your music archive
 
 # Music library
 
-Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. We hope you will enjoy mpd even outside of Pia.
+Parula uses the excellent music server [mpd](https://www.musicpd.org) to play your music and Internet radio stations. We hope you will enjoy mpd even outside of Parula.
 
 1. Install mpd: `# apt install mpd mpc`
 2. Configure the directory where your music files are.
@@ -23,7 +23,7 @@ Pia uses the excellent music server [mpd](https://www.musicpd.org) to play your 
    4. ```text
       audio_output {
              type            "pulse"
-             name            "Pia - Device speaker"
+             name            "Parula - Device speaker"
              server          "localhost"
              sink            "alsa_output.usb-...analog-stereo"
       }

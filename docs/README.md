@@ -1,20 +1,20 @@
 ---
-description: Your Personal Information Assistant
+description: Your digital assistant
 ---
 
-# Pia
+# Parula
 
 ![](.gitbook/assets/pia-text-256.png)
 
-Pia is a voice assistant. You can talk to her and give her reasonably natural commands and she will try to understand them and execute them. The commands are defined by voice apps.
+Parula is a voice assistant. You can talk to her and give her reasonably natural commands and she will try to understand them and execute them. The commands are defined by voice apps.
 
 ## Features
 
 ### 100% Local
 
-Pia works entirely on your computer and without Internet connection. Speech recognition and voice generation happen on your device, not in the cloud.
+Parula works entirely on your computer and without Internet connection. Speech recognition and voice generation happen on your device, not in the cloud.
 
-Pia encourages apps that keep all their data local. Keep all your contacts, personal calendar and emails, a huge music library, maps for the entire continent with you. You can even query the Wikipedia without calling the Internet.
+Parula encourages apps that keep all their data local. Keep all your contacts, personal calendar and emails, a huge music library, maps for the entire continent with you. You can even query the Wikipedia without calling the Internet.
 
 #### All your data belongs to you
 
@@ -24,7 +24,7 @@ Optional sync to other devices locally via Wifi and Bluetooth is planned.
 
 #### Always on
 
-It also means that Pia can work in places where Internet connection is intermittent, for example in your car.
+It also means that Parula can work in places where Internet connection is intermittent, for example in your car.
 
 Obviously, Google searches, news, weather updates and so on will still call out to the Internet.
 

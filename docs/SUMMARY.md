@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Pia](README.md)
+* [Parula](README.md)
 
 ## User
 
@@ -20,7 +20,7 @@
 
 ## Develop
 
-* [How Pia works](develop/how-pia-works.md)
+* [How Parula works](develop/how-parula-works.md)
 * [Voice application](develop/app/README.md)
   * [Create the stub files](develop/app/create-the-stub-files.md)
   * [Intents JSON](develop/app/intents-json.md)
@@ -28,4 +28,3 @@
 ---
 
 * [Voice application via WebSocket](voice-application-via-websocket.md)
-

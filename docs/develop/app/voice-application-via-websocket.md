@@ -1,23 +1,23 @@
 ---
 description: >-
-  How to implement a voice app in another process and connecting it to Pia core
+  How to implement a voice app in another process and connecting it to Parula core
   using WebSockets
 ---
 
 # Voice application via WebSocket
 
-There are a few reasons why you might want to implement your application in a different OS process and not as built-in app for Pia:
+There are a few reasons why you might want to implement your application in a different OS process and not as built-in app for Parula:
 
 * You are integration voice control into an existing GUI application, e.g. a GNOME, KDE or Windows application.
 * Your application is inherently heavy, because it's loading lots of data, or using large dependency libraries.
-* The lifetime of your app needs to be different from Pia core, for whatever reason.
+* The lifetime of your app needs to be different from Parula core, for whatever reason.
 * You absolutely cannot implement the app in JavaScript, but you are forced to implement it in another programming language.
 
-For such cases, you can run your application in a different OS process and connect it to Pia using WebSockets.
+For such cases, you can run your application in a different OS process and connect it to Parula using WebSockets.
 
 ## JavaScript
 
-If you're implementing your out-of-process application in JavaScript, you can use the base classes that are implemented in Pia.
+If you're implementing your out-of-process application in JavaScript, you can use the base classes that are implemented in Parula.
 
 Install, on command line:
 
@@ -72,7 +72,7 @@ and the response looks like this:
   id: 0,
   success: true,
   result: {
-    responseText: "Your next appointment is in 2 weeks from now: Pia meeting with Ben Bucksch"
+    responseText: "Your next appointment is in 2 weeks from now: Parula meeting with Ben Bucksch"
   }
 }
 
@@ -92,7 +92,7 @@ or in the error case:
 
 ### Call
 
-Call direction: When then user issues a voice command, Pia core will call your app via this protocol, and your app responds. But during initial registration and for notifications, your app calls Pia core.
+Call direction: When then user issues a voice command, Parula core will call your app via this protocol, and your app responds. But during initial registration and for notifications, your app calls Parula core.
 
 The `id` must be different for every call on this WebSocket. It is set by the caller and echoed back in the response.
 
@@ -108,7 +108,7 @@ You return your responses, in success and error cases, by sending a message over
 
 ### Registration
 
-At startup, you need to call Pia core and tell it about your app. This happens with a call with path `registerApp`, which you issue right after opening the WebSocket. The argument is the [Intents JSON](develop/app/intents-json.md) file. E.g.:
+At startup, you need to call Parula core and tell it about your app. This happens with a call with path `registerApp`, which you issue right after opening the WebSocket. The argument is the [Intents JSON](develop/app/intents-json.md) file. E.g.:
 
 ```text
 {
@@ -130,7 +130,7 @@ At startup, you need to call Pia core and tell it about your app. This happens w
 
 whereas `invocationName` contains your app ID, and `intents.name`is the intent ID and function name. For a detailed description, see [Intents JSON](develop/app/intents-json.md).
 
-When the user says "What are the news", Pia core will send call function with `path: "myapp/news"`, according to the protocol above, as a message on your WebSocket connection.
+When the user says "What are the news", Parula core will send call function with `path: "myapp/news"`, according to the protocol above, as a message on your WebSocket connection.
 
 
 
